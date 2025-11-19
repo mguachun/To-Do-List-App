@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+
+
+:root {
+  --primary-color:  #2e134a; /* Purple */
+  --secondary-color: #e2daef; 
+  --tertiary-color: #6f42c1;
+  --text-color: #333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Stack Sans Text, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.linkGroupItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-delete{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-edit{
+  background-color: #9c69d6;
+  border-color: #9c69d6;
+  color: white;
+  margin-left: 20px;
+}
+
+.btn-add {
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+  color: white;
+}
+
+.list-group-item-custom {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Subtle shadow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.list-group-item-custom:hover {
+  /* Slight lift effect on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
