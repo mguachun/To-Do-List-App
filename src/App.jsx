@@ -121,7 +121,7 @@ class App extends Component {
               return (
                 <div key={index} >
                   <ListGroup.Item
-                    className="list-group-item-custom"
+                    className="list-group-item-custom fade-in"
                     action>
                     {item.value}
                     <span>
